@@ -11,7 +11,9 @@ num2=int(input())
 
 if (num1 > num2):
     print(f"a nagyobb szám a(z) {num1}")
+
 elif (num1 == num2):
     print(f"a két szám egyenlő")
+    
 else:
     print(f"A(z) {num2} a nagyobb szám")

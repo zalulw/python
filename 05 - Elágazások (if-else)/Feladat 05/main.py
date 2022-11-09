@@ -12,7 +12,9 @@ num2=int(input())
 
 if (num1 < num2):
     print(f"{num1} {num2}")
+
 elif (num1 == num2):
     print(f"{num1} es {num2} egyenlo")
+    
 else:
     print(f"{num2} {num1}")
