@@ -26,5 +26,6 @@ elif (num % 2 != 0 and num > 0 and num % 5 != 0):
 elif (num % 2 != 0 and num < 0 and num % 5 != 0):
     print("a szám páratlan, pozitív és nem osztható öttel")
 
+
 else:
     print("a szám 0")

@@ -8,11 +8,11 @@ num=int(input())
 if (num >= 0 and num <= 9):
     print("A szám egyjegyű")
 
-elif(num >= 10 and num <= 99):
+elif(num >= 10 and num <= 90):
     print("a szám kétjegyű")
 
-elif(num >= 100 and num <= 999):
+elif(num >=100 and num <= 999):
     print("a szám háromjegyű")
     
-else:
-    print("a szám négy vagy több jegyű")
+
+print("a szám négy vagy több jegyű")
