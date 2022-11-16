@@ -7,6 +7,6 @@ num1=int(input())
 
 if (num1 >= 0):
     print("A szám pozitív")
-    
+
 else:
     print("a szám negatív")

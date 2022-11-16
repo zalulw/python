@@ -14,6 +14,6 @@ if (num1 > num2):
 
 elif (num1 == num2):
     print(f"a két szám egyenlő")
-    
+
 else:
     print(f"A(z) {num2} a nagyobb szám")
