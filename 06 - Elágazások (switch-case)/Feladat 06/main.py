@@ -12,7 +12,7 @@ print("kerem a teglalap hosszat cm-ben: ")
 rectangleLength=int(input())
 
 print("[t] - terulet \n [k] - kerulet \n [a] - atlo")
-rectangle=input()
+rectangle=input().lower().strip()
 
 match rectangle:
     case "t":
@@ -24,5 +24,5 @@ match rectangle:
         print(f"a kerulet {k}cm3")
 
     case "a":
-        a=int((rectangleLength * rectangleLength) + (rectangleWidth * rectangleWidth))
+        a=int(math.sqrt(math.pow(rectangleLength) + math.pow(rectangleWidth)))
         print(f"az atlo {a}cm")
