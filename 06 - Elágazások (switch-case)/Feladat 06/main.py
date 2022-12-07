@@ -3,7 +3,7 @@ import math
 
 t: int = None
 k: int = None
-a: int = None
+a: float = None
 rectangle: int = None
 
 print("kerem a teglalap szelesseget cm-ben: ")
@@ -24,5 +24,5 @@ match rectangle:
         print(f"a kerulet {k}cm3")
 
     case "a":
-        a=int((rectangleLength * rectangleLength) + (rectangleWidth * rectangleWidth))
+        a=float(math.sqrt(pow(rectangleLength, 2) + pow(rectangleWidth, 2)))
         print(f"az atlo {a}cm")
