@@ -1,6 +1,7 @@
 from os import system
 
-udito = (input("Milyen uditot szeretne? [1] Coca Cola \n [2] Pepsi \n [3] Fanta \n [4] Sprite: ")).strip()
+print("Milyen uditot szeretne? [1] Coca Cola \n [2] Pepsi \n [3] Fanta \n [4] Sprite: ")
+udito = input().strip()
 
 match udito:
     case "1":

@@ -1,6 +1,7 @@
 from os import system
 
-honap = (input("milyen honap van?: ")).strip().lower()
+print("milyen honap van?: ")
+honap = input().strip().lower()
 
 match honap:
     case "januar":
