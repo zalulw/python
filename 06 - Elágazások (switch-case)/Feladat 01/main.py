@@ -1,6 +1,6 @@
 from os import system
 
-day = (input("hanyadik napja van a hetnek: " ))
+day = (input("hanyadik napja van a hetnek: " )).strip()
 
 match day:
     case "1":

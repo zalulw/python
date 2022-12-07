@@ -12,7 +12,7 @@ r2=int(input())
 
 
 
-kotes=input("milyen fajta ellenallas [p] parhuzamos vagy [s] soros: ")
+kotes=input("milyen fajta ellenallas [p] parhuzamos vagy [s] soros: ").strip().lower()
 
 match kotes: 
     case "p | P":

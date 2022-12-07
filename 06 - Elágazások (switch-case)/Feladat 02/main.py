@@ -1,40 +1,40 @@
 from os import system
 
-honap = (input("milyen honap van?: "))
+honap = (input("milyen honap van?: ")).strip().lower()
 
 match honap:
-    case "Januar":
+    case "januar":
         print("1")
 
-    case "Februar":
+    case "februar":
         print("2")
 
-    case "Marcius":
+    case "marcius":
         print("3")
 
-    case "Aprilis":
+    case "aprilis":
         print("4")
 
-    case "Majus":
+    case "majus":
         print("5")
 
-    case "Junius":
+    case "junius":
         print("6")
 
-    case "Julius":
+    case "julius":
         print("7")
 
-    case "Augusztus":
+    case "augusztus":
         print("8")
 
-    case "Szeptember":
+    case "szeptember":
         print("9")
 
-    case "Oktober":
+    case "oktober":
         print("10")
 
-    case "November":
+    case "november":
         print("11")
 
-    case "December":
+    case "december":
         print("12")

@@ -14,7 +14,7 @@ num1=int(input())
 print("kerem a masodik szamot: ")
 num2=int(input())
 
-muvelet=(input("mit szeretne tenni a ket szammal (osszeadas, kivonas, szorzas, osztas): "))
+muvelet=(input("mit szeretne tenni a ket szammal (osszeadas, kivonas, szorzas, osztas): ")).lower().strip()
 match muvelet:
     case"osszeadas":
         osszEredmeny=int(num1 + num2)
