@@ -4,7 +4,10 @@ import math
 num1: int = None
 num2: int = None
 muvelet: str = None
-
+osszEredmeny: int = None
+kivEredmeny: int = None
+szorEredmeny: int = None
+osztEredmeny: int = None
 
 
 
@@ -14,21 +17,25 @@ num1=int(input())
 print("kerem a masodik szamot: ")
 num2=int(input())
 
+<<<<<<< HEAD
 print("mit szeretne tenni a ket szammal (osszeadas, kivonas, szorzas, osztas): ")
 muvelet=input().strip().lower()
+=======
+muvelet=(input("mit szeretne tenni a ket szammal (osszeadas, kivonas, szorzas, osztas): ")).lower().strip()
+>>>>>>> 50f309e65a82688b327a55eb5193354b5754c54a
 match muvelet:
     case"osszeadas":
-        osszEredmeny=int(num1 + num2)
+        osszEredmeny=num1 + num2
         print(osszEredmeny)
     
     case"kivonas":
-        kivEredmeny=int(num1 - num2)
+        kivEredmeny=num1 - num2
         print(kivEredmeny)
 
     case"szorzas":
-        szorEredmeny=int(num1 * num2)
+        szorEredmeny=num1 * num2
         print(szorEredmeny)
 
     case"osztas":
-        osztEredmeny=int(num1 / num2)
+        osztEredmeny=num1 / num2
         print(osztEredmeny)
