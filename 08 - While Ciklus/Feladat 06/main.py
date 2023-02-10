@@ -2,7 +2,7 @@ from os import system
 
 age: int = None
 
-while(age < 100 and age > 0):
+while(age == None or (age < 100) or (age > 0)):
     print("kor: ")
     age=int(input())
 
