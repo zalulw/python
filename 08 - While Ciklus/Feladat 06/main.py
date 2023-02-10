@@ -14,5 +14,6 @@ while(age < 100 and age > 0):
     
     elif (age >= 19 and age <= 65):
         print("dolgozo")
+    
     else:
         print("nyugdijas")
