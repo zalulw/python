@@ -1,15 +1,10 @@
 from os import system
-system('cls')
 
 name: str = None
-nameLength: int = None
+temp: str = None
 
-print("adja meg a nevét: ",end='')
-name=str(input())
-len(name)
+while(name == None or len(name) < 2 ):
+    print("Kérem írja be a nevét: ", end="")
+    name = input().strip()
 
-while(name == str):
-    if (len(name) < 2):
-        print("a nev nem eleg hosszu")
-    else:
-        print(f"Üdvözöljük {name}")
+print(f"Üdvözlöm {name}!")
