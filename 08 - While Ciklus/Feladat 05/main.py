@@ -5,9 +5,12 @@ number: int = None
 limit: int = None
 tries = 0
 
-print("hatarertek: ")
-limit=int(input())
+#+1 while cikl bekeri a hatarerteket
+while(limit == None and limit > 100):
+    print("hatarertek: ")
+    limit=int(input())
 
+#szambekeres
 while(limit >= 100 or sum < limit):
     print("ertek: ")
     number=int(input())

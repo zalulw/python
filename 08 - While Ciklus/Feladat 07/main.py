@@ -5,7 +5,7 @@ smallerNumber: int = None
 biggerTemp: str = None
 smallerTemp: str = None
 
-while ((smallerNumber == None or biggerNumber == None) or biggerNumber <= smallerNumber):
+while ((smallerNumber == None or biggerNumber == None) or biggerNumber <= smallerNumber):   #kulon kell bekerni a 2 szamot
     print("kissebb szam:", end="")
     smallerTemp = input()
 

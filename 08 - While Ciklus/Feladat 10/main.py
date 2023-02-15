@@ -5,10 +5,10 @@ temp: str = None
 devideableByFive: int = None
 devideableByEleven: int = None
 
-while (number == None):
+while (number == None and (number > 0) and (number < 99)): 
     print("ketjegyu szam:", end="")
     temp = input()
-    if (temp.isnumeric() and len(temp) < 3):
+    if (temp.isnumeric() and len(temp) < 3 and len(temp) > 1):
         number = int(temp)
 
 print(f"0 és a szám közötti páros számok:", end="")
