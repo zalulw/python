@@ -3,7 +3,7 @@ from os import system
 age: int = None
 
 #szamellenorzos
-while(age == None or (age < 100) or (age > 0)):
+while(age == None or age == int):
     print("kor: ")
     age=int(input())
 
