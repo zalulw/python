@@ -2,10 +2,10 @@ from os import system
 
 age: int = None
 
-#szamellenorzos
+
 while(age == None or age == int):
     print("kor: ")
-    age=int(input())
+    age=int(input().isnumeric())
 
 if (age > 0 and age <= 6):
     print("gyermek")
@@ -16,5 +16,8 @@ elif (age >= 7 and age <= 18):
 elif (age >= 19 and age <= 65):
     print("dolgozo")
 
-else:
+elif (age > 65):
     print("nyugdijas")
+
+else:
+    print("nem szam")
