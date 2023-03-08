@@ -1,0 +1,2 @@
+def getNamefromConsole()->str:
+    

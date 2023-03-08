@@ -19,3 +19,5 @@ def divideTwo(a: float, b:float)->float:
 def substractTwo(a: float, b:float)->float:
     result:float = None
     result = a - b
+
+    return result
