@@ -1,36 +1,12 @@
-def getStringfromConsoleA() -> str:
+def getStringfromConsole() -> str:
     text: str = None
-    temp: str = None
     isAlpha: bool = False
-    trucatedString: bool = False
 
-    while (text == None):
-        print("kerem az elso szot")
-        temp = input()
-        trucatedString = temp.replace(".", "").replace(".", "")
-        isAlpha = trucatedString.isalpha()
+    while text is None:
+        input_str = input().replace(",", "")
+        isAlpha = input_str.isalpha()
 
-        if(isAlpha):
-            text = str(temp)
-        
-        else:
-            print("nem megfelelo a megadott karakterlanc")
+        if isAlpha:
+            text = input_str
 
-def getStringfromconsoleB() -> str:
-    text: str = None
-    temp: str = None
-    isAlpha: bool = False
-    trucatedString: bool = False
-
-    while (text == None):
-        print("kerem a masodik szot")
-        temp = input()
-        trucatedString = temp.replace(".", "").replace(".", "")
-        isAlpha = trucatedString.isalpha()
-
-        if(isAlpha):
-            text = str(temp)
-        
-        else:
-            print("nem megfelelo a megadott karakterlanc")
-
+    return text

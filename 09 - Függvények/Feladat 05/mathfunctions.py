@@ -1,14 +1,22 @@
-from consoleIO import *
+def calculateSameLetters(text1: str, text2: str) -> int:
+    intersection = 0
 
-def calculateSameLetters() -> int:
-    word1: str = getStringfromConsoleA()
-    word2: str = getStringfromconsoleB()
-    count = 0
+    for i in text1:
+        if (i in text2 and i not in intersection):
+            intersection += 1
+            text2 = text2.replace(i, '', 1)
 
-    for letter in word1:
-        if (letter in word2):
-            count+=1
+    return intersection
+# def calculateSameLetters(text1: str, text2: str) -> int:
+#     text1 = str
+#     text2 = str
+#     intersection = 0
 
-            word2 = word2.replace(letter, '', 1)
 
-    return count
+#     for i in text1:
+#         if (i in text2.find(i) > 0 and intersection.find(i) == 0):
+#             intersection+=1
+
+#             text2 = text2.replace(i, '', 1)
+
+#     return intersection

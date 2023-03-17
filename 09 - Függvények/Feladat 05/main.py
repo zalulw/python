@@ -2,8 +2,11 @@ from os import system
 from consoleIO import *
 from mathfunctions import *
 
-text1: str = getStringfromConsoleA()
-text2: str = getStringfromconsoleB()
-count: int = calculateSameLetters()
+print("kerem az elso szot")
+text1: str = getStringfromConsole()
+print("kerem a masodik szot")
+text2: str = getStringfromConsole()
 
-print(f"{text1}, {text2} -> {count}")
+intersection: int = calculateSameLetters(text1, text2)
+
+print(f"{text1}, {text2} -> {intersection}")
