@@ -5,7 +5,7 @@ def getAmountfromConsole() -> float:
     truncatedString: str = None
 
     while (number == None):
-        print("Adja meg a az átváltandó értéket HUF-ban: ", end="")
+        print("atvaltando ertek forintban: ", end="")
         temp = input()
         truncatedString = temp.replace(".", "").replace("-", "")
         isNumber = truncatedString.isnumeric()
@@ -22,7 +22,7 @@ def getCurrencyfromConsole() -> str:
     currency: str = None
 
     while (currency == None or currency not in ["EUR", "JPY", "USD", "CHF"]):
-        print("Kérem adja meg a cél valutát: ", end="")
+        print("cel valuta: ", end="")
         currency = input().upper()
     
     return currency
