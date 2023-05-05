@@ -23,7 +23,7 @@ class RAM:
         self.speed:float = None
         self.latency: float = None
 
-class storage:
+class Storage:
     def __init__(self):
         self.capacity:float = None
         self.manufacturer: str = None
@@ -31,13 +31,19 @@ class storage:
         self.speed: float = None
         self.type: str = None
 
-class motherboard:
+class Motherboard:
     def __init__(self):
         self.manufacturer:str = None
         self.type:str = None
 
 class computer:
-    def __init__(self):CPU, GPU, RAM, storage, motherboard
+    def __init__(self, cpu:CPU, gpu:GPU, ram:RAM, storage:Storage, motherboard:Motherboard):
+        self.cpu:CPU = cpu
+        self.gpu:GPU = gpu
+        self.ram:RAM = ram
+        self.storage:Storage = storage
+        self.motherboard:Motherboard = motherboard
+
     def __str__(self)->str:
-        return f"{CPU} {GPU} {RAM} {storage} {motherboard}"
+        return f"{self.cpu} {self.gpu} {self.ram} {self.storage} {self.motherboard}"
 
