@@ -9,7 +9,7 @@ def calculateAverage(students: List[Student]) -> float:
 
     return sum/len(students)
 
-def getBestStudent(students: List[Student]) -> float:
+def getBestStudent(students: List[Student]) -> Student:
     bestStudent: Student = students[0] #referencia érték
 
     for index in range(1, len(students), 1):
@@ -17,3 +17,13 @@ def getBestStudent(students: List[Student]) -> float:
             bestStudent = students[index]
     
     return bestStudent
+
+
+def studentsAboveAverage (students: List[Student], classAverage:float) -> List[Student]:
+    aboveAverage: List[Student] = []
+
+    for student in students:
+        if(student.average >= classAverage):
+            aboveAverage.append(student)
+    
+    return aboveAverage

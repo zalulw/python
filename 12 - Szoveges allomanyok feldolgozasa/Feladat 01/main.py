@@ -1,6 +1,6 @@
 from typing import *
 from student import Student
-from studentIO import importStudents
+from studentIO import *
 from services import *
 
 students: List[Student] = importStudents()
@@ -12,9 +12,12 @@ for student in students:
 #megszamoljuk a tanulok szamat
 countOfClass: int = len(students)
 print(f"\n\naz osztalynak {countOfClass} tanuloja van \n\n")
-
+#osztalyatlag
 classAverage: float = calculateAverage(students)
 print(f"az osztaly atlaga: {classAverage:1.2f}")
-
+ #legjobb tanulo
 bestStudent: Student = getBestStudent(students)
 print(f"\n\nA legjobb tanulo {bestStudent}\n\n")
+#tanulok az atlag felett .txt fileba
+aboveAverage:List[student]=studentsAboveAverage(students, classAverage)
+writeStudentsInFile(aboveAverage, "atlagfelett.txt")

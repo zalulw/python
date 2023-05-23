@@ -33,3 +33,15 @@ def importStudents() -> List[Student]:
     except FileNotFoundError as ex:
         print(f"{ex.filename} nem található!")
         return []
+
+def writeStudentsInFile(students:List[Student], fileName:str) -> None:
+    basepath:str = os.path.dirname(os.path.abspath(__file__))
+    basepath+="/output"
+    fileFullPath: str = os.path.join(basepath, fileName)
+
+    try:
+        with open(fileFullPath, encoding="utf-8", mode="w") as file:
+            for student in students:
+                file.write(f"{student.name} : {student.average}\n")
+    except FileNotFoundError as ex:
+        print(f"{ex.fileName} Nem található")
