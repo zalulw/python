@@ -2,9 +2,9 @@ from os import system
 
 name: str = None
 
-print("Adja meg a nevét")
-name = str(input("Kérem a nevét: "))
+print(f"Kerem adja meg a nevet: ", end="")
+name = str(input())
 
-system("cls")
+system('cls')
 
-print(f"Udvozlom {name}")
+print(f"Udvozlom, {name}")

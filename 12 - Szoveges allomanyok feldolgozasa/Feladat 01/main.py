@@ -21,3 +21,9 @@ print(f"\n\nA legjobb tanulo {bestStudent}\n\n")
 #tanulok az atlag felett .txt fileba
 aboveAverage:List[student]=studentsAboveAverage(students, classAverage)
 writeStudentsInFile(aboveAverage, "atlagfelett.txt")
+#van e kituno tanulo
+exists:bool = isAnyExcellentStudent(students)
+if(exists):
+     print("Van kituno tanulo")
+else: 
+    print("nincs kituno tanulo")
