@@ -1,11 +1,11 @@
-import datetime
+from datetime import datetime
 
 class Book:
     def __init__(self):
         super().__init__()
         self.writerFirstName: str = None
         self.writerSurname: str = None
-        self.writerBirthday: datetime = datetime()
+        self.writerBirthday: datetime = None
         self.bookTitle:str = None
         self.ISBN:str = None
         self.publisher:str = None
