@@ -17,7 +17,7 @@ def readBooksFromFile(fileName: str) -> List[Book]:
                 oneLine = line.strip() 
                 data = oneLine.split('\t')
         
-                book= Book()
+                book=Book()
                 book.writerFirstName=data[0]
                 book.writerSurname=data[1]
                 book.writerBirthday = datetime.fromisoformat(data[2])
@@ -37,4 +37,20 @@ def readBooksFromFile(fileName: str) -> List[Book]:
 
     except FileNotFoundError as ex:
         print(f"{ex.filename} nem található!")
+        return []
+
+
+def writeBooksToFile(fileName: str, books :List[Book]) -> None:
+    basepath: str = os.path.dirname(os.path.abspath(__file__))
+    basepath += "/output"
+    fileFullPath: str = os.path.join(basepath, fileName)
+
+    try:
+        with open(fileFullPath,encoding="utf-8", mode="w") as file:
+            for book in books:
+                file.write(f"{book.writerFirstName} \t {book.writerSurname} \t {book.bookTitle} \t {book.ISBN} \t {book.theme} \t {book.pageNumber}\n")
+
+
+    except FileNotFoundError as ex:
+        print(f"{ex.filename} irasakor hiba lepett fel")
         return []
