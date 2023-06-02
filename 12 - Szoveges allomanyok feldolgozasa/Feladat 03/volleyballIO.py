@@ -32,3 +32,14 @@ def importPlayers(fileName: str) -> List[Player]:
         print(f"{ex.fileName} nem található!")
         return []
         
+def writePlayersToFile(fileName:str, players: List[Player]) -> None:
+    basepath: str = os.path.dirname(os.path.abspath(__file__))
+    basepath += "/output"
+    fileFullPath: str = os.path.join(basepath, fileName)
+
+    try:
+        with open(fileFullPath, encoding = "utf-8", mode = "w") as file:
+            for player in players:
+                file.write(f"{player.name}, {player.height}, {player.position}, {player.nationality}, {player.team}, {player.homeCountry}")
+    except FileNotFoundError as ex:
+        print(f"{ex.filename} irasakor hiba lepett fel")
